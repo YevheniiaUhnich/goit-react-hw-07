@@ -1,0 +1,39 @@
+.wrapper {
+  border: 2px solid black;
+  width: 320px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  border-radius: 0.3rem;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.input {
+  width: 280px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.btnAddContact {
+  width: 120px;
+  font-size: 12px;
+  margin: 20px auto;
+  border: 1px solid gray;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 10px;
+  font-style: italic;
+}

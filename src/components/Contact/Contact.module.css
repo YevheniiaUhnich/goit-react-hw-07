@@ -1,0 +1,54 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 10px;
+  width: 280px;
+}
+
+.contactLi {
+  flex: 1 1 calc((100% - 60px) / 4);
+  box-sizing: border-box;
+}
+
+.wrapperContact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleContact,
+.titleNumber {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+.titleNumber {
+  margin-left: 10px;
+}
+
+.icon {
+  color: black;
+  font-size: 20px;
+}
+
+.btnBox {
+  display: flex;
+  align-items: center;
+}
+
+.btnContact {
+  border: 2px solid gray;
+  background-color: rgb(205, 203, 207);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}

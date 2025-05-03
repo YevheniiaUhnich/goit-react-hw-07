@@ -1,0 +1,15 @@
+.searchWrapper {
+  margin-bottom: 40px;
+}
+.titleSearch {
+  color: black;
+  margin: 0;
+  margin-left: 40px;
+}
+
+.input {
+  margin-left: 40px;
+  width: 370px;
+  height: 30px;
+  border-radius: 0.5rem;
+}
