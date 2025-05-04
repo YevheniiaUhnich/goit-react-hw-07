@@ -6,7 +6,8 @@
 }
 
 .title {
-  color: black;
+  color: #353839;
+  font-weight: 600;
   margin-left: 40px;
 }
 /* .logo {
