@@ -32,6 +32,15 @@
   box-shadow: 0 0 4px #00bfff, 0 0 8px #00bfff, 0 0 12px #00bfff;
 }
 
+.input:hover {
+  border: 2px solid #009acd;
+}
+.input:focus,
+.input:focus-visible {
+  border: 2px solid #009acd;
+  outline: 4px auto #009acd;
+}
+
 .btnAddContact {
   color: #353839;
   font-weight: 500;
