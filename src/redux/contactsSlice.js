@@ -1,6 +1,5 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { addContacts, deleteContacts, fetchContacts } from "./contactsOps";
-// import { selectFilteredContacts } from "./filtersSlice";
 
 const handlePending = (state) => {
   state.isLoading = true;
@@ -58,28 +57,17 @@ export const selectIsLoading = (state) => state.contacts.isLoading;
 
 export const selectError = (state) => state.contacts.error;
 
-export const selectStatusFilter = (state) => state.filters.contactsFilter;
 export const selectNameFilter = (state) => state.filters.name;
 
 export const selectFilteredContacts = createSelector(
-  [selectContacts, selectStatusFilter, selectNameFilter],
-  (contacts, statusFilter, nameFilter) => {
-    let filtered = contacts;
-
-    if (statusFilter === "active") {
-      filtered = filtered.filter((contact) => !contact.completed);
-    } else if (statusFilter === "completed") {
-      filtered = filtered.filter((contact) => contact.completed);
+  [selectContacts, selectNameFilter],
+  (contacts, nameFilter) => {
+    if (!nameFilter || nameFilter.trim() === "") {
+      return contacts;
     }
-    if (nameFilter && nameFilter.trim() !== "") {
-      const normalized = nameFilter.toLowerCase();
-      filtered = filtered.filter((contact) =>
-        contact.name.toLowerCase().includes(normalized)
-      );
-    }
-    return filtered;
+    const normalized = nameFilter.toLowerCase();
+    return contacts.filter((contact) =>
+      contact.name.toLowerCase().includes(normalized)
+    );
   }
 );
-
-export const { addContact, deleteContact, toggleCompleted } =
-  contactsSlice.actions;

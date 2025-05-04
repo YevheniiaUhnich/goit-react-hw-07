@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const filterInitialState = {
   status: "all",
+  name: "",
 };
 
 const filtersSlice = createSlice({
@@ -23,4 +24,6 @@ export default filtersSlice.reducer;
 
 //selectors
 
-export const selectFilteredContacts = (state) => state.filters.status;
+export const selectStatusFilter = (state) => state.filters.status;
+
+export const selectNameFilter = (state) => state.filters.name;
