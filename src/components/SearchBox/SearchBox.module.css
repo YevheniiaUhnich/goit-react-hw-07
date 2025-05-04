@@ -2,7 +2,9 @@
   margin-bottom: 40px;
 }
 .titleSearch {
-  color: black;
+  color: #353839;
+  font-weight: 500;
+  font-size: 16px;
   margin: 0;
   margin-left: 40px;
 }
@@ -12,4 +14,6 @@
   width: 370px;
   height: 30px;
   border-radius: 0.5rem;
+  border: 2px solid #00bfff;
+  box-shadow: 0 0 4px #00bfff, 0 0 8px #00bfff, 0 0 12px #00bfff;
 }

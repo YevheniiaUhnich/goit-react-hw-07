@@ -45,7 +45,7 @@ const ContactForm = () => {
         validationSchema={ContactSchema}>
         <Form className={s.formWrapper}>
           <label htmlFor={nameFieldId} className={s.label}>
-            <span>Name</span>
+            <span className={s.textSpan}>Name</span>
             <Field
               className={s.input}
               type="text"
@@ -60,7 +60,7 @@ const ContactForm = () => {
           </label>
 
           <label htmlFor={numberFieldId} className={s.label}>
-            <span>Number</span>
+            <span className={s.textSpan}>Number</span>
             <Field
               className={s.input}
               type="tel"
