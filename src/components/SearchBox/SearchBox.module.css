@@ -10,6 +10,7 @@
 }
 
 .input {
+  padding-left: 40px;
   margin-left: 40px;
   width: 370px;
   height: 30px;
@@ -20,9 +21,18 @@
 
 .input:hover {
   border: 2px solid #009acd;
+  cursor: pointer;
 }
 .input:focus,
 .input:focus-visible {
   border: 2px solid #009acd;
   outline: 4px auto #009acd;
+}
+
+.iconFilter {
+  color: #009acd;
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 54px;
 }
