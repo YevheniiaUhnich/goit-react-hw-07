@@ -29,8 +29,9 @@
 
 .titleContact,
 .titleNumber {
-  font-size: 18px;
-  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353839;
   margin: 0;
 }
 .titleNumber {
@@ -40,6 +41,8 @@
 .icon {
   color: #009acd;
   font-size: 20px;
+  stroke: #037ba3;
+  stroke-width: 1;
 }
 
 .btnBox {
