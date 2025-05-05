@@ -11,6 +11,12 @@
   font-weight: 600;
   margin-left: 40px;
 }
+
+.loading {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
 /* .logo {
   height: 6em;
   padding: 1.5em;
