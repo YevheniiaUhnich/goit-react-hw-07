@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import s from "./SearchBox.module.css";
-import { setNameFilter } from "../../redux/filtersSlice";
+import { selectNameFilter, setNameFilter } from "../../redux/filtersSlice";
 import { LiaSearchSolid } from "react-icons/lia";
 
 const SearchBox = () => {
   const dispatch = useDispatch();
-  const nameFilter = useSelector((state) => state.filters.name);
+  const nameFilter = useSelector(selectNameFilter);
 
   const handleChange = (e) => {
     dispatch(setNameFilter(e.target.value));
